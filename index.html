@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <html>
+    <head>
+       
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+
+      
+	    <title>Alien Clicking Game</title>
+            
+     <script>
+      var click=0; 
+      var outOfTime = false;
+        function count(){
+            if(!outOfTime){
+                click+=1; 
+                document.getElementById("score").innerHTML = click;
+               }
+             
+        }
+        
+    
+      </script>
+      <script>
+        
+      </script>
+	</head>
+        <p>I need to go home</p>
+        <p>
+            Hint: Just keep clicking me to earn points!
+        </p>
+        <p id="goodday"></p>
+	<body>	
+                Score:
+       <span id="score">0</span><br/>
+      
+       <button class="button" onclick="count()" id="demo"><img src="img/alien.png" height="100" width="100" /></button>
+       
+            
+     
+	</body>
+    </html>
